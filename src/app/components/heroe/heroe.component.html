@@ -1,0 +1,20 @@
+
+
+<div class="row animated fadeIn fast">
+    <div class="col-md-4">
+        <img style="margin-top:20px;" [src]="heroe.img" class="img-fluid" alt="">
+        <br>
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block" style="margin-top:50px;">Regresar</a>
+    </div>
+    <div class="col-md-8">
+        <h3 style="margin-top:50px;">{{heroe.nombre}}</h3>
+        <hr>
+        <p>
+            {{heroe.bio}}
+        </p>
+        <div> 
+         <img style="height:40px;" src="../../../assets/img/{{heroe.casa}}.png" alt="">
+        </div>
+    </div>
+
+</div>
